@@ -7,6 +7,9 @@
       <ul id="js-navigation-menu" class="navigation-menu show">
 				{% include nav_links.html %}
       </ul>
+      {% if forloop.last == false %}
+        |
+      {% endif %}
     </nav>
   </div>
 </header>
