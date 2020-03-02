@@ -12,11 +12,11 @@
   "layout"
 ;
 
-.h2header {
+hr {
     display: block;
     height: 2px;
     border: 0;
-    border-top: 1px solid $action-color;
+    border-top: 4px solid $action-color;
     margin: 1em auto;
     padding: 0;
 }
