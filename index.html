@@ -12,7 +12,7 @@ function is_day() {
     var d = new Date(); // current time
     var hours = d.getHours();
 
-    return (hours > 9) && (hours < 1800);
+    return (hours > 9) && (hours < 18);
 }
 
 var day_image = "{{ site.day_cover | prepend: site.baseurl }}";
@@ -21,9 +21,6 @@ var night_image = "{{ site.night_cover | prepend: site.baseurl }}";
 var image = (is_day()) ? day_image : night_image;
 
 document.getElementById("mycoverimage").style.backgroundImage = `url(${image})`;
-document.write(image);
-document.write("testing");
-document.write(`url(${image})`);
 
 </script>
 
