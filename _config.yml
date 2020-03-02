@@ -36,21 +36,24 @@ inter_post_navigation: false
 highlightjs_theme: "monokai-sublime"
 
 sections:
-  - EN_name: Planning
-    FR_name: Organization
+  - EN_name: Schedule
+    FR_name: Programme
     url: plans
   - EN_name: Location
-    FR_name: Endroit
+    FR_name: Emplacement
     url: location
-  - EN_name: accommodation
+  - EN_name: Accommodation
     FR_name: Logements
     url: accommodation
   - EN_name: Gifts
     FR_name: Cadeaus
     url: gifts
   - EN_name: RSVP
-    FR_name: Cadeaus
+    FR_name: Réponse souhaitée
     url: rsvp
+  - EN_name: Music
+    FR_name: Musique
+    url: music
 
 languages:
   - language: English
