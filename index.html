@@ -3,6 +3,10 @@ layout: default
 ---
 <div class="home">
 
+
+
+<div id="mycoverimage" class="site-header-container has-cover" style="">
+
 <script>
 function is_day() {
     var d = new Date(); // current time
@@ -20,7 +24,8 @@ if (is_day()){
   image = night_image
 }
 
-document.write(sprintf("<div class='site-header-container has-cover' style='backgriund-image: url(%s);'>", image)
+document.getElementbyId("mycoverimage").style.backgroundImage = sprintf("url(%s)", image)
+  document.write(image)
 
 </script>
 
