@@ -26,7 +26,8 @@ description: >
 # root of your server.
 baseurl: "/heijmans-gehrmann/" # the subpath of your site, e.g. /blog/
 url: "" # the base hostname & protocol for your site
-cover: "/assets/day.jpg"
+day_cover: "/assets/day.jpg"
+night_cover: "/assets/night.jpg"
 logo: "/assets/logo.png"
 
 # Build settings

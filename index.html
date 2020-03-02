@@ -3,6 +3,25 @@ layout: default
 ---
 <div class="home">
 
+<script>
+function is_day() {
+    var d = new Date(); // current time
+    var hours = d.getHours();
+
+    return (hours > 9) && (hours < 1800)
+}
+
+var day_image = "{{ site.day_cover | prepend: site.baseurl }}"
+var night_image = "{{ site.night_cover | prepend: site.baseurl }}"
+
+if (is_day()){
+  document.write(day_image)
+} else {
+  document.write(night_image)
+}
+
+</script>
+
 <div class="site-header-container {% if site.cover %}has-cover{% endif %}" {% if site.cover %}style="background-image: url({{ site.cover | prepend: site.baseurl }});"{% endif %}>
   <div class="scrim {% if site.cover %}has-cover{% endif %}">
     <header class="site-header">
