@@ -18,8 +18,8 @@ description: >
 # root of your server.
 baseurl: "/heijmans-gehrmann/" # the subpath of your site, e.g. /blog/
 url: "" # the base hostname & protocol for your site
-cover: "heijmans-gehrmann/assets/header_image.jpg"
-logo: "heijmans-gehrmann/assets/logo.png"
+cover: "/assets/day.jpg"
+logo: "/assets/logo.png"
 
 # Build settings
 markdown: kramdown
