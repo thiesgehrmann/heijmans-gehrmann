@@ -18,14 +18,11 @@ function is_day() {
 var day_image = "{{ site.day_cover | prepend: site.baseurl }}"
 var night_image = "{{ site.night_cover | prepend: site.baseurl }}"
 
-if (is_day()){
-  image = day_image
-} else {
-  image = night_image
-}
+var image = (is_day()) day_image : night_image
 
 document.getElementbyId("mycoverimage").style.backgroundImage = sprintf("url(%s)", image)
-  document.write(image)
+document.write(image)
+document.write("testing")
 
 </script>
 
