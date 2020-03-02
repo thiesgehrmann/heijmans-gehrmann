@@ -49,11 +49,21 @@
 	</script>
 
   <script>
+
+    var url = new URL(window.location.href);
+    var time = url.searchParams.get("t");
+
     function is_day() {
       var d = new Date(); // current time
       var hours = d.getHours();
 
-      return (hours > 9) && (hours < 18);
+      if (time == "day"){
+        return true;
+      } else if (time == "night"){
+        return false;
+      } else {
+        return (hours > 9) && (hours < 18);
+      }
     }
 
     var day_image = "{{ site.day_cover | prepend: site.baseurl }}";
