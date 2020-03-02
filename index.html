@@ -15,15 +15,17 @@ var day_image = "{{ site.day_cover | prepend: site.baseurl }}"
 var night_image = "{{ site.night_cover | prepend: site.baseurl }}"
 
 if (is_day()){
-  document.write(day_image)
+  image = day_image
 } else {
-  document.write(night_image)
+  image = night_image
 }
+
+document.write(sprintf("<div class='site-header-container has-cover' style='backgriund-image: url(%s);'>", image)
 
 </script>
 
-<div class="site-header-container {% if site.cover %}has-cover{% endif %}" {% if site.cover %}style="background-image: url({{ site.cover | prepend: site.baseurl }});"{% endif %}>
-  <div class="scrim {% if site.cover %}has-cover{% endif %}">
+
+  <div class="scrim has-cover">
     <header class="site-header">
       <h1 class="title">{{ site.EN_title }}</h1>
       {% if site.EN_subtitle %}<p class="subtitle">{{ site.EN_subtitle }}</p>{% endif %}
