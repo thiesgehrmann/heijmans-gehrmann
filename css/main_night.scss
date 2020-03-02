@@ -11,3 +11,12 @@
   "neat/neat",
   "layout"
 ;
+
+.h2header {
+    display: block;
+    height: 2px;
+    border: 0;
+    border-top: 1px solid $action-color;
+    margin: 1em auto;
+    padding: 0;
+}
