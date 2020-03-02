@@ -39,7 +39,7 @@
 
 
   <!-- Site styles -->
-  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+  <!--<link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}"> -->
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 	<!--<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" /> -->
 	
@@ -47,4 +47,39 @@
 	<script type="text/javascript">
 		window.tooltips = []
 	</script>
+
+  <script>
+    function is_day() {
+      var d = new Date(); // current time
+      var hours = d.getHours();
+
+      return (hours > 9) && (hours < 18);
+    }
+
+    var day_image = "{{ site.day_cover | prepend: site.baseurl }}";
+    var night_image = "{{ site.night_cover | prepend: site.baseurl }}";
+
+    var day_stylesheet = '{{ "/css/main_day.css" | prepend: site.baseurl }}';
+    var night_stylesheet = '{{ "/css/main_night.css" | prepend: site.baseurl }}';
+
+    var cover_image = (is_day()) ? day_image : night_image;
+    var main_stylesheet = (is_day()) ? day_stylesheet : night_stylesheet;
+
+  </script>
+
 </head>
+
+<script>
+
+  var file = main_stylesheet.pathname.split( "/" ).pop();
+
+  var link = document.createElement( "link" );
+  link.href = file.substr( 0, file.lastIndexOf( "." ) ) + ".css";
+  link.type = "text/css";
+  link.rel = "stylesheet";
+  link.media = "screen,print";
+
+  document.getElementsByTagName( "head" )[0].appendChild( link );
+
+</script>
+

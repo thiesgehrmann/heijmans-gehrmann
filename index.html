@@ -8,20 +8,7 @@ layout: default
 <div id="mycoverimage" class="site-header-container has-cover" style="">
 
 <script>
-function is_day() {
-    var d = new Date(); // current time
-    var hours = d.getHours();
-
-    return (hours > 9) && (hours < 18);
-}
-
-var day_image = "{{ site.day_cover | prepend: site.baseurl }}";
-var night_image = "{{ site.night_cover | prepend: site.baseurl }}";
-
-var image = (is_day()) ? day_image : night_image;
-
-document.getElementById("mycoverimage").style.backgroundImage = `url(${image})`;
-
+document.getElementById("mycoverimage").style.backgroundImage = `url(${cover_image})`;
 </script>
 
 
