@@ -20,7 +20,7 @@ var night_image = "{{ site.night_cover | prepend: site.baseurl }}";
 
 var image = (is_day()) ? day_image : night_image;
 
-document.getElementbyId("mycoverimage").style.backgroundImage = sprintf("url('%s')", image);
+document.getElementById("mycoverimage").style.backgroundImage = sprintf("url('%s')", image);
 document.write(image);
 document.write("testing");
 document.write(sprintf("url('%s')", image));
