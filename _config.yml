@@ -26,6 +26,25 @@ markdown: kramdown
 inter_post_navigation: false
 highlightjs_theme: "monokai-sublime"
 
+sections:
+  - EN_name: Planning
+    FR_name: Organization
+    url: plans
+  - EN_name: Location
+    FR_name: Endroit
+    url: location
+  - EN_name: accommodation
+    FR_name: Logements
+    url: accommodation
+
+languages:
+  - language: English
+    url: index.html
+    short: EN
+  - language: French
+    url: french.html
+    short: FR
+
 # Pagination Settings
 # https://github.com/sverrirs/jekyll-paginate-v2/blob/master/README-GENERATOR.md#site-configuration
 pagination:

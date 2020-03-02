@@ -1,5 +1,7 @@
-{% for page in site.pages %}
-	{% if page.title and page.main_nav == true %}
-	<li class="nav-link"><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-	{% endif %}
+{% for sect in site.sections %}
+        <li class="nav-link"><a href="#{{sect.url}}" alt="{{sect.EN_name}}">{{sect.EN_name}}</a>
+{% endfor %}
+
+{% for lang in site.languages %}
+    <li class="nav-link"><a href="{{lang.url | prepend: site.baseurl}}" alt="{{lang.language}}">{{lang.short}}</a>
 {% endfor %}
