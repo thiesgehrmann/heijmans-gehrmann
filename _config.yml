@@ -9,8 +9,16 @@ exclude:
   - "/vendor/"
 
 # Site settings
-title: E+T Wedding
-subtitle: "22nd August 2020"
+EN_title: >
+  The marriage of
+  Elisabeth Heijmans & Thies Gehrmann
+EN_subtitle: "22nd August 2020"
+
+FR_title: >
+  Le Marriage de
+  Elisabeth Heijmans & Thies Gehrmann
+FR_subtitle: "22. August 2020"
+
 description: >
   You are invited to the wedding.
 # Base URL of site (i.e. /blog). It should always start with a slash,
