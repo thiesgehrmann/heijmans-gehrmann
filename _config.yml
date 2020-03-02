@@ -44,6 +44,12 @@ sections:
   - EN_name: accommodation
     FR_name: Logements
     url: accommodation
+  - EN_name: Gifts
+    FR_name: Cadeaus
+    url: gifts
+  - EN_name: RSVP
+    FR_name: Cadeaus
+    url: rsvp
 
 languages:
   - language: English
