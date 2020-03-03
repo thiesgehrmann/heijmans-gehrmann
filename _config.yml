@@ -9,6 +9,9 @@ exclude:
   - "/vendor/"
 
 # Site settings
+
+title: Elisabeth & Thies
+
 EN_title: >
   The marriage of
   Elisabeth Heijmans & Thies Gehrmann
