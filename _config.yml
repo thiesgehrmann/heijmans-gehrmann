@@ -42,7 +42,7 @@ sections:
     FR_name: Programme
     url: plans
   - EN_name: Location
-    FR_name: Emplacement
+    FR_name: Lieux
     url: location
   - EN_name: Parking
     FR_name: Parking
@@ -51,10 +51,10 @@ sections:
     FR_name: Logements
     url: accommodation
   - EN_name: Gifts
-    FR_name: Cadeaus
+    FR_name: Cadeaux
     url: gifts
   - EN_name: RSVP
-    FR_name: Réponse souhaitée
+    FR_name: Réponses
     url: rsvp
   - EN_name: Music
     FR_name: Musique
